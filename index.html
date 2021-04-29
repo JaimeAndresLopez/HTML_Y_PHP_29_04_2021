@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="sp">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="chrome:8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Y PHP Ejercicio Formulario</title>
+    </head>
+    <body>
+        <form method="POST" action="formulario.php">
+            <label >Nombres</label>
+            <input type="text" name="Nombres">
+            <br>
+            <label >Apellidos</label>
+            <input type="text" name="Apellido">
+            <br>
+            <label >Edad</label>
+            <input type="number" name="edad">
+            <br>
+            <label >Genero</label>
+            <select name="Genero">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Otro">Otro</option>
+                <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+            </select>
+            <br>
+            <label >Nacionalidad Colombiana</label>
+            <br>
+            <label for="Si">Si</label><input type="radio" name="opcion" id="Si" value="soy Colombiano">
+            <label for="No">No</label><input type="radio" name="opcion" id="No" value="soy extranjero">
+            <br>
+            <label >Que lenguas entiende</label>
+            <br>
+            <label >Español</label><input type="checkbox" name="lengua[]" value="Español">
+            <label >Ingles</label><input type="checkbox" name="lengua[]" value="Ingles">
+            <label >Frances</label><input type="checkbox" name="lengua[]" value="Frances">
+            <label >Aleman</label><input type="checkbox" name="lengua[]" value="Aleman"><br>
+            <input type="Submit" value="Enviar Datos">
+            </form>
+    </body>
+</html>
